@@ -61,11 +61,10 @@ interface SupplyFields {
 }
 ```
 
-* **SupplyLogic**: An interface that extends the `Logic` interface and represents the Aave V3 supply logic. It includes the `id`, `rid`, and `fields` properties.
+* **SupplyLogic**: An interface that extends the `Logic` interface and represents the Aave V3 supply logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface SupplyLogic {
-  id: string;
   rid: string;
   fields: SupplyFields;
 }
@@ -156,11 +155,10 @@ interface WithdrawFields {
 }
 ```
 
-* **WithdrawLogic**: An interface that extends the `Logic` interface and represents the Aave V3 withdraw logic. It includes the `id`, `rid`, and `fields` properties.
+* **WithdrawLogic**: An interface that extends the `Logic` interface and represents the Aave V3 withdraw logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface WithdrawLogic {
-  id: string;
   rid: string;
   fields: WithdrawFields;
 }
@@ -220,11 +218,10 @@ interface BorrowFields {
 }
 ```
 
-* **BorrowLogic**: An interface that extends the Logic interface and represents the Aave V3 borrow logic. It includes the id, rid, and fields properties.
+* **BorrowLogic**: An interface that extends the Logic interface and represents the Aave V3 borrow logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface BorrowLogic {
-  id: string;
   rid: string;
   fields: BorrowFields;
 }
@@ -300,11 +297,10 @@ interface RepayFields {
 }
 ```
 
-* **RepayLogic**: An interface that extends the `Logic` interface and represents the Aave V3 repay logic. It includes the `id`, `rid`, and `fields` properties.
+* **RepayLogic**: An interface that extends the `Logic` interface and represents the Aave V3 repay logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface RepayLogic {
-  id: string;
   rid: string;
   fields: RepayFields;
 }

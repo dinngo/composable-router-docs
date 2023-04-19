@@ -33,11 +33,10 @@ interface FlashLoanFields {
 }
 ```
 
-* **FlashLoanLogic**: An interface that extends the `Logic` interface and represents the Aave v3 supply logic. It includes the `id`, `rid`, and `fields` properties.
+* **FlashLoanLogic**: An interface that extends the `Logic` interface and represents the Aave v3 supply logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface FlashLoanLogic {
-  id: string;
   rid: string;
   fields: FlashLoanFields;
 }

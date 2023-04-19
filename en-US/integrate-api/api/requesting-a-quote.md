@@ -130,7 +130,6 @@ Quote is used in fields of Logic data. It can be used after building Logic accor
 
 ```javascript
 const swapLogic = {
-    id: uuid,    // Random uuid, like uuidv4() can be used
     rid: `${protocol}:${logicId}`,
     fields: swapQuote,
 }

@@ -28,11 +28,10 @@ interface SendTokenFields {
 }
 ```
 
-* **SendTokenLogic**: An interface that extends the `Logic` interface and represents the Utility send token logic. It includes the `id`, `rid`, and `fields` properties.
+* **SendTokenLogic**: An interface that extends the `Logic` interface and represents the Utility send token logic. It includes the `rid`, and `fields` properties.
 
 ```typescript
 interface SendTokenLogic {
-  id: string;
   rid: string;
   fields: SendTokenFields;
 }

@@ -4,7 +4,6 @@
 
 ```typescript
 interface Logic<TFields = any> {
-  id: string;
   rid: string;
   fields: TFields;
 }
@@ -12,7 +11,6 @@ interface Logic<TFields = any> {
 
 The `Logic<TFields = any>` interface includes the following properties:
 
-* **id**: A unique identifier for this Logic data, which can be a UUID.
 * **rid**: An identity composed of the protocol and logicId.
 * **fields**: Information about the fields required for this Logic.
 

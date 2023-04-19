@@ -43,7 +43,6 @@ const tokenOut = WBTC;
 
 const swapQuote = await getSwapQuote(inputToken, inputAmount, tokenOut);
 const swapLogic = {
-    id: uuidv4(),
     rid: 'uniswap-v3:swap-token',
     fields: swapQuote,
 }
@@ -71,7 +70,6 @@ const tokenOut = aWBTC;
 
 const supplyQuote = await getSupplyQuote(inputToken, inputAmount, tokenOut);
 const supplyLogic = {
-    id: uuidv4(),
     rid: 'aave-v3:supply',
     fields: supplyQuote,
 }

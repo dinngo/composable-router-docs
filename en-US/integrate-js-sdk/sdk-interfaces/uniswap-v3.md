@@ -11,8 +11,89 @@ The following code defines interfaces and functions related to the Uniswap V3 sw
 ### Types
 
 * **SwapTokenParams**: A type that represents the input parameters for the Uniswap V3 swap token logic
+
+```typescript
+type SwapTokenParams =
+  | {
+      input: {
+        token: {
+          chainId: number;
+          address: string;
+          decimals: number;
+          symbol: string;
+          name: string;
+        };
+        amount: string;
+      };
+      tokenOut: {
+        chainId: number;
+        address: string;
+        decimals: number;
+        symbol: string;
+        name: string;
+      };
+    }
+  | {
+      tokenIn: {
+        chainId: number;
+        address: string;
+        decimals: number;
+        symbol: string;
+        name: string;
+      };
+      output: {
+        token: {
+          chainId: number;
+          address: string;
+          decimals: number;
+          symbol: string;
+          name: string;
+        };
+        amount: string;
+      };
+    };
+```
+
 * **SwapTokenFields**: A type that represents the fields required for the Uniswap V3 swap token logic.
-* **SwapTokenLogic**: An interface that extends the `Logic` interface and represents the Uniswap V3 swap token logic. It includes the `id`, `rid`, and `fields` properties.
+
+```typescript
+import * as core from '@furucombo/composable-router-core';
+
+interface SwapTokenFields {
+  tradeType: core.TradeType;
+  input: {
+    token: {
+      chainId: number;
+      address: string;
+      decimals: number;
+      symbol: string;
+      name: string;
+    };
+    amount: string;
+  };
+  output: {
+    token: {
+      chainId: number;
+      address: string;
+      decimals: number;
+      symbol: string;
+      name: string;
+    };
+    amount: string;
+  };
+  fee?: number;
+  path?: string;
+}
+```
+
+* **SwapTokenLogic**: An interface that extends the `Logic` interface and represents the Uniswap V3 swap token logic. It includes the `rid`, and `fields` properties.
+
+```typescript
+interface SwapTokenLogic {
+  rid: string;
+  fields: SwapTokenFields;
+}
+```
 
 ### Functions
 
