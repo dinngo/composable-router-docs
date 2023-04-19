@@ -70,7 +70,7 @@ A string containing tracking information about the referrer of the integrator.
 
 This endpoint provides the transaction request to be sent, which will essentially include the Router contract `address` (to), transaction `data` (data), and ETH to be carried in the transaction (value).
 
-<pre class="language-javascript"><code class="lang-javascript">const getRouterTransactionRequest = async (chainId, account, logics) =>, {
+<pre class="language-javascript"><code class="lang-javascript">const getRouterTransactionRequest = async (chainId, account, logics) => {
     const result = await client.post('/v1/transactions', {
         body: {
             chainId: chainId,

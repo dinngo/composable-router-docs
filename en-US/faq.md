@@ -6,7 +6,7 @@ We have open-sourced all of our **contracts** and **SDKs**, except for API. Deve
 
 ### 2. How do we decide which protocol to implement?
 
-The Composable Router contract ability to interact with any contract. Our **API**/**SDK** provides developers with the ability to develop applications more quickly for certain protocol Logic. If you don't have a protocol Logic you want to use, you can [**submit PRs**](https://github.com/dinngo/composable-router-api-sdk) (Pull Requests) to integrate. We will implement based on **security**, **requirements** and **cost**.
+The Composable Router contract ability to interact with any contract. Our **API**/**SDK** provides developers with the ability to develop applications more quickly for certain protocol Logic. If you don't have a protocol Logic you want to use, you can [**submit PRs**](https://github.com/dinngo/composable-router-logics) (Pull Requests) to integrate. We will implement based on **security**, **requirements** and **cost**.
 
 ### **3. What** Composable Router solve**?**
 

@@ -11,6 +11,6 @@ The user's address is `0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa`.
 Typically, the user needs to perform two actions:&#x20;
 
 1. Exchange **USDC** to **WBTC** by **Uniswap V3**&#x20;
-2. Supply WBTC to get **aWBTC** by **Aave V3**
+2. Supply **WBTC** to get **aWBTC** by **Aave V3**
 
 Each of the actions mentioned above represents a `Logic` in the Composable Router. The following sections will guide you on how to build these logics and send the transaction successfully.

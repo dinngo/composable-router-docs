@@ -23,5 +23,5 @@ description: >-
 
 ## New integration
 
-Want integrations that don't currently exist, external developers just need to send 1 PR to the Github repo to get integrations, improving experience and reducing time.
+Want integrations that don't currently exist, external developers just need to send 1 PR (Pull Requests) to the [Github repo](https://github.com/dinngo/composable-router-logics) to get integrations, improving experience and reducing time.
 
