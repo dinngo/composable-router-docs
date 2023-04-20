@@ -8,7 +8,7 @@
   * [Zap-in & Zap-out](use-cases/zap-in-and-zap-out.md)
   * [Position Management](use-cases/position-management.md)
   * [Multi-Action Bundling](use-cases/multi-action-bundling.md)
-* [📋 Available Networks & Protocols](available-networks-and-protocols.md)
+* [📋 Available Networks & Protocols](list-networks-protocols.md)
 * [🛡 Security](security.md)
 * [💎 Fees](fees.md)
 * [❓ FAQ](faq.md)
