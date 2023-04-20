@@ -1,10 +1,11 @@
 ---
 description: >-
-  This is the list of API & SDK support, you can issue PR to add on-demand or
-  interact directly with Contract to build applications with any protocol.
+  This is a list of supported APIs and SDKs. You can issue a pull request to add
+  on-demand support or directly interact with the contract to build applications
+  using any protocol.
 ---
 
-# 📋 List: Networks, Protocols
+# 📋 Available Networks & Protocols
 
 ## Networks
 
@@ -21,7 +22,6 @@ description: >-
 | 6 | ✅ | uniswap-v3  | swap-token                                                                               |
 | 7 | ✅ | utility     | wrapped-native-token, send-token, multi-send                                             |
 
-## New integration
+## New Integrations
 
-Want integrations that don't currently exist, external developers just need to send 1 PR (Pull Requests) to the [Github repo](https://github.com/dinngo/composable-router-logics) to get integrations, improving experience and reducing time.
-
+If you want integrations that don't currently exist, external developers just need to send 1 PR (Pull Request) to the [Github repository](https://github.com/dinngo/composable-router-logics) to obtain the integrations, which improves the experience and reduces time.
