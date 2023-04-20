@@ -9,7 +9,7 @@ description: >-
 
 Some use cases include:
 
-* **Employing flash loans to manage lending positions and execute liquidations**
+* **Employing** [**flash loans**](flash-loans.md) **to manage lending positions and execute liquidations**
 * **Facilitating zap-in and zap-out functionality for any token within your apps**
 * **Developing a multi-send application for airdrops or asset transfers**
 * **Build a DEX aggregator utilizing your own algorithm**

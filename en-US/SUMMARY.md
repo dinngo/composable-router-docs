@@ -3,7 +3,7 @@
 * [🏡 Getting Started](README.md)
 * [🌟 Why Composable Router?](why-composable-router.md)
 * [💡 Use Cases](use-cases/README.md)
-  * [Flash Loan](use-cases/flash-loan.md)
+  * [Flash Loans](use-cases/flash-loans.md)
   * [Permit2 Amplifier](use-cases/permit2-amplifier.md)
   * [Zap-in & Zap-out](use-cases/zap-in-and-zap-out.md)
   * [Position Management](use-cases/position-management.md)
