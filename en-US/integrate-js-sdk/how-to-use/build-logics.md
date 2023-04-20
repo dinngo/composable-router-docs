@@ -11,7 +11,7 @@ Typically, the user needs to perform two actions:&#x20;
 1. Exchange **1000 USDC** to **WBTC** by **Uniswap V3**&#x20;
 2. Supply **WBTC** to get **aWBTC** by **Aave V3**
 
-Each of the actions mentioned above represents a `Logic` in the Composable Router.&#x20;
+Each of the actions mentioned above represents a **`Logic`** in the Composable Router.&#x20;
 
 Let's start building these logics. Here you can find [**example code**](https://github.com/dinngo/composable-router-api-sdk/blob/master/examples/uniswap-v3-swap-and-aave-v3-supply.ts)**.**
 

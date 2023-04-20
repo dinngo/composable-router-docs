@@ -17,7 +17,7 @@ const routerData: api.RouterData = {
 };
 ```
 
-### Step 2: Estimate Router Data
+### Step 2: Estimate Router Data Result
 
 Next, use `api.estimateRouterData` to estimate how much funds will be spent (funds) and how many balances will be obtained (balances) from this transaction. It will also identify any approvals that the user needs to execute (approvals) before the transaction and whether there is any permit2 data that the user needs to sign before proceeding (permitData).
 
