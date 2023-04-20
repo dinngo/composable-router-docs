@@ -1,12 +1,12 @@
 # ❓ FAQ
 
-### 1. Is Composable Router Open Source?
+### 1. Is  the Composable Router Open Source?
 
-We have open-sourced all of our **contracts** and **SDKs**, except for API. Developers can build upon the SDKs or access the API to reduce a lot of research time and focus on building products for users.
+We have open-sourced all our contracts and SDKs, except for the API. This enables developers to save time on research and focus on building products for users by either building upon the SDKs or accessing the API.
 
 ### 2. How do we decide which protocol to implement?
 
-The Composable Router contract ability to interact with any contract. Our **API**/**SDK** provides developers with the ability to develop applications more quickly for certain protocol Logic. If you don't have a protocol Logic you want to use, you can [**submit PRs**](https://github.com/dinngo/composable-router-logics) (Pull Requests) to integrate. We will implement based on **security**, **requirements** and **cost**.
+The Composable Router has the ability to interact with any contract. Our **API/SDK** provides developers with the ability to develop applications more quickly for certain protocol logic. If you do not have a desired protocol logic to use, you can [submit pull requests (PRs)](https://github.com/dinngo/composable-router-logics) for integration. We will implement them based on **security**, **requirements**, and **cost**.
 
 ### **3. What** Composable Router solve**?**
 
