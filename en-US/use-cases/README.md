@@ -1,19 +1,22 @@
 ---
 description: >-
-  Composable allows for liberation from a single protocol, and as more protocols
-  and uses become available, the possibilities and convenience become higher.
+  The Composable Router allows for liberation from a single protocol. As
+  additional protocols and applications emerge, the potential and convenience of
+  the router increase significantly.
 ---
 
 # 💡 Use Cases
 
+Some use cases include:
+
 * **Employing flash loans to manage lending positions and execute liquidations**
 * **Facilitating zap-in and zap-out functionality for any token within your apps**
-* **Developing a multi-send application for airdrop or asset transfer**
+* **Developing a multi-send application for airdrops or asset transfers**
 * **Build a DEX aggregator utilizing your own algorithm**
 * **Creating an arbitrage bot**
 
-Moreover, developers can add new protocols to the SDK without smart contracts if they are not already available.
+Additionally, developers can add new protocols to the SDK (without smart contracts) if they are not already available.
 
-## Creativity is unlimited
+## Creativity is Unlimited
 
-The composable of the blockchain allows you to do things that the Web2 world can't do, and build your own applications like Lego. With the system we provide and your creativity, we can create more possible applications.
+By virtue of its composability, the blockchain provides you with the ability to accomplish tasks that are beyond the scope of the Web2 universe. You can use this feature to construct your own applications in a modular fashion, much like assembling Lego pieces. With our platform and your ingenuity, the potential for developing novel applications is endless.
