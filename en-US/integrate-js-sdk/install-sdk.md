@@ -1,4 +1,4 @@
-# 🧊 Install SDK
+# 1⃣ Install SDK
 
 [![](https://badge.fury.io/js/@furucombo%2Fcomposable-router-api.svg)](https://www.npmjs.com/package/@furucombo/composable-router-api)
 

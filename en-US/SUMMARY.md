@@ -24,8 +24,11 @@
 
 ## integrate JS SDK
 
-* [⚙ Overview](integrate-js-sdk/overview.md)
-* [🧊 Install SDK](integrate-js-sdk/install-sdk.md)
+* [🔮 Overview](integrate-js-sdk/overview.md)
+* [1⃣ Install SDK](integrate-js-sdk/install-sdk.md)
+* [2⃣ Build Logics](integrate-js-sdk/build-logics.md)
+* [3⃣ Estimate Router Data](integrate-js-sdk/estimate-router-data.md)
+* [4⃣ Send Router Transaction](integrate-js-sdk/send-router-transaction.md)
 * [⚒ SDK Interfaces](integrate-js-sdk/sdk-interfaces/README.md)
   * [Global Types](integrate-js-sdk/sdk-interfaces/global-types.md)
   * [FlashLoan Logic](integrate-js-sdk/sdk-interfaces/flashloan-logic.md)
@@ -36,12 +39,6 @@
   * [ParaSwap V5](integrate-js-sdk/sdk-interfaces/paraswap-v5.md)
   * [Uniswap V3](integrate-js-sdk/sdk-interfaces/uniswap-v3.md)
   * [Utility](integrate-js-sdk/sdk-interfaces/utility.md)
-* [💡 How to use?](integrate-js-sdk/how-to-use/README.md)
-  * [1⃣ Trading Strategy](integrate-js-sdk/how-to-use/trading-strategy.md)
-  * [2⃣ Build Logics](integrate-js-sdk/how-to-use/build-logics.md)
-  * [3⃣ Build Router Data](integrate-js-sdk/how-to-use/build-router-data.md)
-  * [4⃣ Estimate Router Data](integrate-js-sdk/how-to-use/estimate-router-data.md)
-  * [5⃣ Send Router Transaction](integrate-js-sdk/how-to-use/send-router-transaction.md)
 
 ## Smart Contract
 
