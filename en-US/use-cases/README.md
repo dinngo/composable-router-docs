@@ -10,7 +10,7 @@ description: >-
 Some use cases include:
 
 * **Employing** [**flash loans**](flash-loans.md) **to manage lending positions and execute liquidations**
-* **Facilitating zap-in and zap-out functionality for any token within your apps**
+* **Facilitating** [**zap-in and zap-out**](zap-in-and-zap-out.md) **functionality for any token within your apps**
 * **Developing a multi-send application for airdrops or asset transfers**
 * **Build a DEX aggregator utilizing your own algorithm**
 * **Creating an arbitrage bot**
