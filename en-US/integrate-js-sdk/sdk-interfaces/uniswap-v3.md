@@ -99,7 +99,7 @@ interface SwapTokenLogic {
 
 * **getSwapTokenTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Uniswap V3 swap token logic on the specified `chainId`.
 * **getSwapTokenQuotation(chainId: number, params: SwapTokenParams)**: An asynchronous function that retrieves a quotation for swaping assets on the Uniswap V3 protocol with the specified `params` object on the specified `chainId`.
-* **newSwapTokenLogic(fields: SwapTokenFields)**: A function that creates a new Uniswap V3 swap token logic data with the given `fields` object.
+* **newSwapTokenLogic(fields: SwapTokenFields)**: A function that creates the Uniswap V3 swap token logic data with the given `fields` object.
 
 ### Example Code
 

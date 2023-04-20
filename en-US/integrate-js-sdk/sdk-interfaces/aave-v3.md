@@ -74,7 +74,7 @@ interface SupplyLogic {
 
 * **getSupplyTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Aave V3 supply logic on the specified `chainId`.
 * **getSupplyQuotation(chainId: number, params: SupplyParams)**: An asynchronous function that retrieves a quotation for supplying assets on the Aave V3 protocol with the specified `params` object on the specified `chainId`.
-* **newSupplyLogic(fields: SupplyFields)**: A function that creates a new Aave V3 supply logic data with the given `fields` object.
+* **newSupplyLogic(fields: SupplyFields)**: A function that creates the Aave V3 supply logic data with the given `fields` object.
 
 ### Example Code
 
@@ -168,7 +168,7 @@ interface WithdrawLogic {
 
 * **getWithdrawTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Aave V3 withdraw logic on the specified `chainId`.
 * **getWithdrawQuotation(chainId: number, params: WithdrawParams)**: An asynchronous function that retrieves a quotation for withdrawing assets from the Aave V3 protocol with the specified `params` object on the specified `chainId`.
-* **newWithdrawLogic(fields: WithdrawFields)**: A function that creates a new Aave V3 withdraw logic data with the given `fields` object.
+* **newWithdrawLogic(fields: WithdrawFields)**: A function that creates the Aave V3 withdraw logic data with the given `fields` object.
 
 ### Example Code
 
@@ -230,7 +230,7 @@ interface BorrowLogic {
 ### Functions
 
 * **getBorrowTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Aave V3 borrow logic on the specified chainId.
-* **newBorrowLogic(fields: BorrowFields)**: A function that creates a new Aave V3 borrow logic data with the given fields object.
+* **newBorrowLogic(fields: BorrowFields)**: A function that creates the Aave V3 borrow logic data with the given fields object.
 
 ### Example Code
 
@@ -310,7 +310,7 @@ interface RepayLogic {
 
 * **getRepayTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Aave V3 repay logic on the specified `chainId`.
 * **getRepayQuotation(chainId: number, params: RepayParams)**: A function that retrieves a quotation for repaying a loan using the specified parameters and Aave V3 protocol on the specified chain.
-* **newRepayLogic(fields: RepayFields)**: A function that creates a new Aave V3 repay logic data with the given `fields` object.
+* **newRepayLogic(fields: RepayFields)**: A function that creates the Aave V3 repay logic data with the given `fields` object.
 
 ### Example Code
 
@@ -344,49 +344,30 @@ Please refer to the [FlashLoan Logic](flashloan-logic.md) section for more infor
 ### Functions
 
 * **getFlashLoanTokenList(chainId: number)**: An asynchronous function that retrieves the list of tokens supported by the Aave V3 flash loan logic on the specified `chainId`.
-* **newFlashLoanLogic(fields: FlashLoanFields)**: A function that creates a new Aave V3 flash loan logic data with the given `fields` object.
+* **newFlashLoanLogic(fields: FlashLoanFields)**: A function that creates the Aave V3 flash loan logic data with the given `fields` object.
+* **newFlashLoanLogicPair(outputs: FlashLoanFields\['outputs'])**: A function that creates the Aave V3 flash loan logic data pair with the given `outputs` object.
 
 ### Example Code
 
 ```typescript
 import * as api from '@furucombo/composable-router-api';
-import { v4 as uuid } from 'uuid';
 
 const chainId = 1;
 
 const tokenList = await api.protocols.aavev3.getFlashLoanTokenList(chainId);
 const underlyingToken = tokenList[0];
 
-const logics: api.Logic[] = [];
+const outputs = [
+  {
+    token: underlyingToken,
+    amount: '10000',
+  },
+];
 
-const flashLoanId = uuid();
-logics.push(
-  api.protocols.aavev3.newFlashLoanLogic({
-    id: flashLoanId,
-    outputs: [
-      {
-        token: underlyingToken,
-        amount: '10000',
-      },
-    ],
-    isLoan: true,
-  })
-);
-
+const [flashLoanLoanLogic, flashLoanRepayLogic] = api.protocols.aavev3.newFlashLoanLogicPair(outputs);
+const logics = [flashLoanLoanLogic];
 // logics.push(swapLogic)
 // logics.push(supplyLogic)
 // logics.push(...)
-
-logics.push(
-  api.protocols.aavev3.newFlashLoanLogic({
-    id: flashLoanId,
-    outputs: [
-      {
-        token: underlyingToken,
-        amount: '10000',
-      },
-    ],
-    isLoan: false,
-  })
-);
+logics.push(flashLoanRepayLogic);
 ```
