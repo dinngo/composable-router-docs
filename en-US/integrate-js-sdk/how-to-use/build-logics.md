@@ -4,7 +4,7 @@
 
 Before using the SDK, it's important to have a clear understanding of your trading **strategy**. This will help you make informed decisions when using the SDK to send transaction. Below, we provide an example scenario to help illustrate how to define a trading strategy. You can use this as a guide to customize your own strategy.
 
-**Example:** Suppose a user has 1000 USDC in Ethereum and wants to swap it for WBTC to supply the WBTC pool on the Aave V3 lending platform and earn interest. The user's address is `0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa`.
+**Example:** Suppose a user has 1000 USDC in Ethereum and wants to swap it for WBTC to supply the WBTC pool on the Aave V3 lending platform and earn interest. The user's address is `0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa`.&#x20;
 
 Typically, the user needs to perform two actions:&#x20;
 
@@ -13,7 +13,7 @@ Typically, the user needs to perform two actions:&#x20;
 
 Each of the actions mentioned above represents a `Logic` in the Composable Router.&#x20;
 
-Let's start building these logics.
+Let's start building these logics. Here you can find [**example code**](https://github.com/dinngo/composable-router-api-sdk/blob/master/examples/uniswap-v3-swap-and-aave-v3-supply.ts)**.**
 
 ## Logic 1: Swap
 

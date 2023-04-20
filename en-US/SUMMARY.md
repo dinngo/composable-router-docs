@@ -26,9 +26,9 @@
 
 * [🔮 Overview](integrate-js-sdk/overview.md)
 * [1⃣ Install SDK](integrate-js-sdk/install-sdk.md)
-* [2⃣ Build Logics](integrate-js-sdk/build-logics.md)
-* [3⃣ Estimate Router Data](integrate-js-sdk/estimate-router-data.md)
-* [4⃣ Send Router Transaction](integrate-js-sdk/send-router-transaction.md)
+* [2⃣ Build Logics](integrate-js-sdk/how-to-use/build-logics.md)
+* [3⃣ Estimate Router Data](integrate-js-sdk/how-to-use/estimate-router-data.md)
+* [4⃣ Send Router Transaction](integrate-js-sdk/how-to-use/send-router-transaction.md)
 * [⚒ SDK Interfaces](integrate-js-sdk/sdk-interfaces/README.md)
   * [Global Types](integrate-js-sdk/sdk-interfaces/global-types.md)
   * [FlashLoan Logic](integrate-js-sdk/sdk-interfaces/flashloan-logic.md)

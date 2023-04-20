@@ -1,4 +1,4 @@
-# 5⃣ Send Router Transaction
+# 4⃣ Send Router Transaction
 
 Next, use `api.buildRouterTransactionRequest` to get the transaction request to be sent, which will essentially include the Router contract address (to), transaction data (data), and ETH to be carried in the transaction (value).
 

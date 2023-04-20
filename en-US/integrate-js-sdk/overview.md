@@ -20,9 +20,11 @@ This guide is designed to help you quickly and easily integrate our SDK into you
 [**Here you can find example code.**](https://github.com/dinngo/composable-router-api-sdk/blob/master/examples/uniswap-v3-swap-and-aave-v3-supply.ts)
 {% endhint %}
 
+### SDK Interfaces
 
-
-
+{% content-ref url="sdk-interfaces/" %}
+[sdk-interfaces](sdk-interfaces/)
+{% endcontent-ref %}
 
 
 
