@@ -1,10 +1,10 @@
 # Multi-Action Bundling
 
-## Multi Send
+## Multi-Send
 
-Send various assets, in one ratio transaction is completed. For example, wallet transfer, salary distribution, Airdrop and other application scenarios.
+Send multiple assets in a single transaction. This feature can be used for various scenarios such as wallet transfers, salary distribution, airdrops, and more.
 
-## Multi Swap
+## Multi-Swap
 
-Quickly exchange stable coins for a variety of currencies when the market fluctuates. Or user can rebalance the assets in there wallet with one click.
+Quickly exchange stable coins for a variety of currencies during market fluctuations. Alternatively, users can rebalance the assets in their wallet with just one click.
 
