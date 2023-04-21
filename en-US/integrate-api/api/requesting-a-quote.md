@@ -126,7 +126,7 @@ const logicParams = {
 const swapQuote = await getQuote(chainId, protocol, logicId, logicParams);
 </code></pre>
 
-Quote is used in fields of Logic data. It can be used after building Logic according to the following format
+Quote is used in fields of Logic data. It can be used after building Logic according to the following format:
 
 ```javascript
 const swapLogic = {
