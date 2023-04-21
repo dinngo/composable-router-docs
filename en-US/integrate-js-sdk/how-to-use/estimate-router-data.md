@@ -1,6 +1,6 @@
 # 3⃣ Estimate Router Data
 
-To estimate the logics of the router results, please follow the instructions.
+To properly estimate the logics of the router results, closely follow the steps below.
 
 ### Step 1: Build Router Data
 
