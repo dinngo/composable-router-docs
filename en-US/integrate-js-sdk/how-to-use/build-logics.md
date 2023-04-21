@@ -2,7 +2,7 @@
 
 ## **Trading strategy**
 
-Before using the SDK, it's important to have a clear understanding of your trading **strategy**. This will help you make informed decisions when using the SDK to send transaction. Below, we provide an example scenario to help illustrate how to define a trading strategy. You can use this as a guide to customize your own strategy.
+Before using the SDK, it's important to have a clear understanding of your trading **strategy**. This will help you make informed decisions when using the SDK to send transactions. Below, we provide an example scenario to help illustrate how to define a trading strategy. You can use this as a guide to customize your own strategy.
 
 **Example:** Suppose a user has 1000 USDC in Ethereum and wants to swap it for WBTC to supply the WBTC pool on the Aave V3 lending platform and earn interest. The user's address is `0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa`.&#x20;
 
@@ -57,7 +57,7 @@ const swapLogic = api.protocols.uniswapv3.newSwapTokenLogic(swapQuotation)
 
 Then you can take the output of the previous `swapQuotation` and use it as an input to get the supply quotation.
 
-1. Use `api.protocols.aavev3.getSupplyQuotation` to get a quote for supplying WBTC, which will essentially provide a 1:1 aEthWBTC.
+1. Use `api.protocols.aavev3.getSupplyQuotation` to get a quote for supplying WBTC, which will provide a 1:1 aEthWBTC token.
 2. Use `api.protocols.aavev3.newSupplyLogic` to build the supply Logic data.
 
 ```typescript
