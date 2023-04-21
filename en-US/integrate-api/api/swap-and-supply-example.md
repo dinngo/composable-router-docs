@@ -1,15 +1,15 @@
-# Swap+Supply (Example)
+# Swap & Supply (Example)
 
-The following section will explain step by step how to swap token by Uniswap and supply token to Aave protocol.
+In the following section, we will guide you step by step on how to swap tokens using Uniswap and supply tokens to the Aave protocol.
 
-### Step 1: Prepare strategy used token
+### Step 1: Prepare Strategy Using Tokens
 
-Users have 1000 USDC, which needs to be exchanged for WBTC and supply to Aave Protocol to earn interest. This scenario will require two logic
+To earn interest by supplying to the Aave Protocol, users holding 1000 USDC need to exchange it for WBTC. This scenario involves two separate steps of logic:
 
 1. Exchange **USDC** to **WBTC** by **Uniswap V3**&#x20;
 2. Supply WBTC to get **aWBTC** by **Aave V3**
 
-Obtain the required Token information according to the Request Tokens API
+Retrieve the necessary token information by utilizing the Request Tokens API.
 
 ```javascript
 const client = axios.create({ baseURL: 'https://ethtaipei-router-api.furucombo.app' });
@@ -19,9 +19,9 @@ const getSwapTokens = async () => {
 }
 ```
 
-### Step 2: Build the Logics
+### Step 2: Build the Logic
 
-The request for first logic quote is exchange 1000 USDC to WBTC by Uniswap V3 looks the following:
+The initial logic quote request is to exchange 1000 USDC to WBTC using Uniswap V3. The request is as follows:
 
 ```javascript
 const getSwapQuote = async (inputToken, inputAmount, tokenOut) => {
@@ -48,7 +48,7 @@ const swapLogic = {
 }
 ```
 
-Than second logic is use above swap output token (WBTC) and amount supply to Aave V3 and get aWBTC looks the following:
+The second logic involves supplying the output token (WBTC) and its corresponding amount to Aave V3 in exchange for aWBTC. The request is as follows:
 
 ```javascript
 const getSupplyQuote = async (inputToken, inputAmount, tokenOut) => {
@@ -77,7 +77,7 @@ const supplyLogic = {
 
 ### Step 3: Estimate Router Data
 
-This endpoint provides an estimate of how much funds will be spent (**funds**) and how many balances will be obtained (**balances**) from this transaction. It will also identify any approvals that the user needs to execute (**approvals**) before the transaction and whether there is any permit2 data that the user needs to sign before proceeding (**permitData**).
+This endpoint offers an estimation of the amount of funds to be spent (**funds**) and the number of balances to be obtained (**balances**) from the transaction. Additionally, it will identify any necessary approvals that the user must execute (**approvals**) before proceeding with the transaction and whether there is any permit2 data that the user needs to sign (**permitData**) beforehand.
 
 ```javascript
 const getEstimateResult = async (chainId, account, logics) => {
@@ -98,11 +98,11 @@ const logics = [swapLogic, supplyLogic];
 const estimateResult = await getEstimateResult(chainId, account, logics);
 ```
 
-It is suggested that a permit can be used so that users do not have to send multiple transactions and have a better experience in the future.
+To ensure a smoother experience in the future, it is recommended to use a permit, which enables users to avoid sending multiple transactions.
 
 ### Step 4: Build Router Transaction
 
-After the demand for the estimate of logics is confirmed, the user of this case permits USDC for the first time.&#x20;
+Once the logic estimate request is confirmed, the user in this scenario will permit USDC for the first time.
 
 ```javascript
 const signer = provider.getSigner(account);
@@ -137,12 +137,12 @@ const transactionRequest = await getEstimateResult(chainId, account, logics, sli
 
 ### Step 5: Sending the Transaction
 
-This is the Router transaction to be sent next. If you're using `ethers` package, you can refer to the code example to send the transaction:
+The  Router transaction is what needs needs to be sent next. If you are using the `ethers` package, you can refer to the code example provided below to send the transaction:
 
 ```javascript
 const signer = provider.getSigner(account);
 const tx = await signer.sendTransaction(transactionRequest);
 ```
 
-We hope this example helps you get started quickly. If you have any questions or suggestions, please feel free to create an issue on Github, and we will respond as soon as possible.
+We hope that this example will assist you in getting started promptly. If you have any questions or suggestions, please do not hesitate to create a Github issue, and we will address it as soon as possible.
 

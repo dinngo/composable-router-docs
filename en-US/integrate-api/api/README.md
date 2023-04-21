@@ -10,7 +10,7 @@ With our REST API, you have the freedom to create your own logic for any require
 
 We provide comprehensive guides that cover the essential principles of our API. These guides will walk you through the integration process of our endpoints into your dApp, step by step.
 
-1. [A quick start guide on how to swap & supply token](swap+supply-example.md)
+1. [A quick start guide on how to swap & supply token](swap-and-supply-example.md)
 2. [How to request all tokens supported by the logic](requesting-tokens.md)
 3. [How to request a quotation by the logic](requesting-a-quote.md)
 4. [How to estimate the router data](estimate-logics-result.md)

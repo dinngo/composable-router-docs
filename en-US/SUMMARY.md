@@ -16,7 +16,7 @@
 ## Integrate API
 
 * [⚙ API](integrate-api/api/README.md)
-  * [Swap+Supply (Example)](integrate-api/api/swap+supply-example.md)
+  * [Swap & Supply (Example)](integrate-api/api/swap-and-supply-example.md)
   * [Requesting Tokens](integrate-api/api/requesting-tokens.md)
   * [Requesting a Quote](integrate-api/api/requesting-a-quote.md)
   * [Estimate Logics Result](integrate-api/api/estimate-logics-result.md)
