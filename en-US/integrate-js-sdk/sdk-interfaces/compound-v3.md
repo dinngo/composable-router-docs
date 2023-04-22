@@ -313,6 +313,9 @@ interface WithdrawCollateralLogic {
 ### Example Code
 
 ```typescript
+import * as api from '@furucombo/composable-router-api';
+import * as logics from '@furucombo/composable-router-logics';
+
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
 
@@ -369,6 +372,9 @@ interface BorrowLogic {
 ### Example Code
 
 ```typescript
+import * as api from '@furucombo/composable-router-api';
+import * as logics from '@furucombo/composable-router-logics';
+
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
 

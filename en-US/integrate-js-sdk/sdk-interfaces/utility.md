@@ -155,6 +155,8 @@ interface SendTokenLogic {
 ### Example Code
 
 ```typescript
+import * as api from '@furucombo/composable-router-api';
+
 const chainId = 1;
 
 const tokenList = await api.protocols.utility.getSendTokenTokenList(chainId);
@@ -210,6 +212,8 @@ interface MultiSendLogic {
 ### Example Code
 
 ```typescript
+import * as api from '@furucombo/composable-router-api';
+
 const chainId = 1;
 
 const tokenList = await api.protocols.utility.getMultiSendTokenList(chainId);
@@ -288,6 +292,10 @@ interface CustomDataLogic {
 ### Example Code
 
 ```typescript
+import * as api from '@furucombo/composable-router-api';
+import * as common from '@furucombo/composable-router-common';
+import axios from 'axios';
+
 const chainId = 1;
 const account = '0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa';
 
