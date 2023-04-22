@@ -20,7 +20,7 @@ description: >-
 | 3 | ✅ | balancer-v2 | flash-loan                                                                               |
 | 4 | ✅ | compound-v3 | supply-base, supply-collateral, withdraw-base, withdraw-collateral, repay, borrow, claim |
 | 6 | ✅ | uniswap-v3  | swap-token                                                                               |
-| 7 | ✅ | utility     | wrapped-native-token, send-token, multi-send                                             |
+| 7 | ✅ | utility     | wrapped-native-token, send-token, multi-send, custom-data                                |
 
 ## New Integrations
 

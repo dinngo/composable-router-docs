@@ -234,3 +234,95 @@ const multiSendLogic = await api.protocols.utility.newMultiSendLogic([
   ...
 ]);
 ```
+
+## CustomData
+
+If you want to interact with protocols that are not currently supported by our SDK, you can combine the intended transaction `to` and `data`, along with the amount of tokens to be spent and received, to create the Utility custom data logic data. And you can also use this with our supported protocols.
+
+The following code defines interfaces and functions related to the Utility custom data logic:
+
+### Types
+
+* **CustomDataFields**: A type that represents the fields required for the Utility custom data logic.
+
+```typescript
+interface CustomDataFields {
+  inputs?: {
+    token: {
+      chainId: number;
+      address: string;
+      decimals: number;
+      symbol: string;
+      name: string;
+    };
+    amount: string;
+  }[];
+  outputs?: {
+    token: {
+      chainId: number;
+      address: string;
+      decimals: number;
+      symbol: string;
+      name: string;
+    };
+    amount: string;
+  }[];
+  to: string;
+  data: string;
+}
+```
+
+* **CustomDataLogic**: An interface that extends the `Logic` interface and represents the Utility custom data logic. It includes the `rid`, and `fields` properties.
+
+```typescript
+interface CustomDataLogic {
+  rid: string;
+  fields: CustomDataFields;
+}
+```
+
+### Functions
+
+* **newCustomDataLogic(fields: CustomDataFields)**: A function that creates the Utility custom data logic data with the given fields object.
+
+### Example Code
+
+```typescript
+const chainId = 1;
+const account = '0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa';
+
+const fromToken = {
+  chainId: 1,
+  address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  decimals: 6,
+  symbol: 'USDC',
+  name: 'USD Coin',
+};
+const toToken = {
+  chainId: 1,
+  address: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  decimals: 18,
+  symbol: 'DAI',
+  name: 'Dai Stablecoin',
+};
+const input = new common.TokenAmount(fromToken, '100');
+
+const { data } = await axios.get(`https://api.1inch.io/v5.0/${chainId}/swap`, {
+  params: {
+    fromTokenAddress: fromToken.address,
+    toTokenAddress: toToken.address,
+    amount: input.amountWei.toString(),
+    fromAddress: account,
+    slippage: 1,
+    disableEstimate: true,
+  },
+});
+const output = new common.TokenAmount(toToken).setWei(data.toTokenAmount);
+
+const customDataLogic = await api.protocols.utility.newCustomDataLogic({
+  inputs: [input],
+  outputs: [output],
+  to: data.tx.to,
+  data: data.tx.data,
+});
+```
