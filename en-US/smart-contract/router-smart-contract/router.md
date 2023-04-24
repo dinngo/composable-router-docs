@@ -1,12 +1,12 @@
 ---
 description: >-
-  The single entry point for users to interact with when executing transactions.
-  Router forwards user transactions to respective Agents.
+  This is the  single entry point for users to interact with when executing
+  transactions. The Router forwards user transactions to respective Agents.
 ---
 
 # Router
 
-**Router** provides users with a single entry point for conducting transaction operations in an intuitive and concise manner. Within the **Router**, users can execute transactions by calling the `execute()` function of the Router contract.
+The **Router** provides users with a single entry point for conducting transaction operations in an intuitive and concise manner. Within the **Router**, users can execute transactions by calling the `execute()` function of the Router contract.
 
 {% code title="src/Router.sol" %}
 ```solidity
@@ -27,8 +27,6 @@ The `execute()` function serves as the core interface for users to execute trans
 * **`uint256 referral`**: Currently, this parameter has no actual function and is only reserved. Users can pass in **`0`** directly.
 
 At the same time, users can also transfer ether to the Router through the `msg.value` parameter to complete the corresponding operations.
-
-
 
 ### IParam.Logic
 
