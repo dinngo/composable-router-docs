@@ -22,8 +22,8 @@ This guide is designed to help you quickly and easily integrate our SDK into you
 
 ### SDK Interfaces
 
-{% content-ref url="sdk-interfaces/" %}
-[sdk-interfaces](sdk-interfaces/)
+{% content-ref url="api-sdk-interfaces/" %}
+[api-sdk-interfaces](api-sdk-interfaces/)
 {% endcontent-ref %}
 
 
