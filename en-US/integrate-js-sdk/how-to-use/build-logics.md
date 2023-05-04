@@ -19,7 +19,7 @@ Let's start building these logics. Here you can find [**example code**](https://
 
 The user can swap 1000 USDC for WBTC using the SwapTokenLogic of Uniswap V3.
 
-1. Use `api.protocols.uniswapv3.getSwapTokenQuotation` to get a quotation.
+1. Use `api.protocols.uniswapv3.getSwapTokenQuotation` to get a quotation. Additionally, slippage is optional. The type should be a number, and the value should be in Basis Points, where 1 Basis Point equals 0.01%.
 2. Use `api.protocols.uniswapv3.newSwapTokenLogic` to build the swap Logic data.
 
 Below is the code snippet:
@@ -48,6 +48,7 @@ const WBTC = {
 const swapQuotation = await api.protocols.uniswapv3.getSwapTokenQuotation(chainId, {
   input: { token: USDC, amount: '1000' },
   tokenOut: WBTC,
+  slippage: 100, // 1%
 });
 
 const swapLogic = api.protocols.uniswapv3.newSwapTokenLogic(swapQuotation)

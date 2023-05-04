@@ -4,7 +4,7 @@ To properly estimate the logics of the router results, closely follow the steps 
 
 ### Step 1: Build Router Data
 
-First, you need to prepare the Router Data, which will include the `chainId`, `account`, `logics`, and `slippage` data. By default, the slippage is optional and set to 1%. However, if you want to customize the slippage, you should specify it as a number, using Basis Points where 1 Basis Point equals 0.01%.
+First, you need to prepare the Router Data, which will include the `chainId`, `account`, and `logics` data.
 
 ```typescript
 import * as api from '@furucombo/composable-router-api';
@@ -13,7 +13,6 @@ const routerData: api.RouterData = {
   chainId,
   account: '0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa',
   logics: [swapLogic, supplyLogic],
-  slippage: 300, // 3%
 };
 ```
 

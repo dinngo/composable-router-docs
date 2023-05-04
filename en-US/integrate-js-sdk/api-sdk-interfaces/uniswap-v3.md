@@ -32,6 +32,7 @@ type SwapTokenParams =
         symbol: string;
         name: string;
       };
+      slippage?: number;
     }
   | {
       tokenIn: {
@@ -51,6 +52,7 @@ type SwapTokenParams =
         };
         amount: string;
       };
+      slippage?: number;
     };
 ```
 
@@ -83,6 +85,7 @@ interface SwapTokenFields {
   };
   fee?: number;
   path?: string;
+  slippage?: number;
 }
 ```
 
@@ -118,6 +121,7 @@ const swapTokenQuotation = await api.protocols.uniswapv3.getSwapTokenQuotation(c
     amount: '10',
   },
   tokenOut,
+  slippage: 100, // 1%
 });
 
 const swapTokenLogic = await api.protocols.uniswapv3.newSwapTokenLogic(swapTokenQuotation);

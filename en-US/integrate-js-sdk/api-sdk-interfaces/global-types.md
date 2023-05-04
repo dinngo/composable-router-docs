@@ -23,7 +23,6 @@ interface RouterData {
   chainId: number;
   account: string;
   logics: Logic[];
-  slippage?: number;
   permitData?: PermitSingleData | PermitBatchData;
   permitSig?: string;
   referralCode?: number;
@@ -35,7 +34,6 @@ The `RouterData` interface represents the data required to execute a router tran
 * **chainId**: The chain ID of the blockchain network.
 * **account**: The address of the user's wallet account.
 * **logics**: The Logics data.
-* **slippage(optional)**: The maximum percentage of slippage allowed in the transaction.
 * **permitData(optional)**: The permit data required for the transaction.
 * **permitSig(optional)**: The signature of the permit data.
 * **referralCode(optional)**: The code provided when applying to be a partner.

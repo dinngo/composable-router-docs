@@ -113,13 +113,12 @@ const permitSig = await signer._signTypedData(permitData.domain, permitData.type
 You can then use the request router transaction data method to get the transaction request.
 
 ```javascript
-const getRouterTransactionRequest = async (chainId, account, logics, slippage) => {
+const getRouterTransactionRequest = async (chainId, account, logics) => {
     const result = await client.post('/v1/transactions', {
         body: {
             chainId: chainId,
             account: account,
             logics: logics,
-            slippage: slippage,
             permitData: permitData,
             permitSig: permitSig,    
         }
@@ -130,9 +129,8 @@ const getRouterTransactionRequest = async (chainId, account, logics, slippage) =
 const chainId = 1;
 const account = USER_ADDRESS;
 const logics = [swapLogic, supplyLogic];
-const slippage = 300; // 3%
 
-const transactionRequest = await getEstimateResult(chainId, account, logics, slippage);
+const transactionRequest = await getEstimateResult(chainId, account, logics);
 ```
 
 ### Step 5: Sending the Transaction

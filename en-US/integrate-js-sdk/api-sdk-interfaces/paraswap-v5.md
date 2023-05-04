@@ -31,6 +31,7 @@ interface SwapTokenParams {
     symbol: string;
     name: string;
   };
+  slippage?: number;
 }
 ```
 
@@ -58,6 +59,7 @@ interface SwapTokenFields {
     };
     amount: string;
   };
+  slippage?: number;
 }
 ```
 
@@ -93,6 +95,7 @@ const swapTokenQuotation = await api.protocols.paraswapv5.getSwapTokenQuotation(
     amount: '10',
   },
   tokenOut,
+  slippage: 100, // 1%
 });
 
 const swapTokenLogic = await api.protocols.paraswapv5.newSwapTokenLogic(swapTokenQuotation);

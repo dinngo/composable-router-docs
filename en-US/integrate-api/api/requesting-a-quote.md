@@ -121,6 +121,7 @@ const logicParams = {
         amount: '1000'
     },
     tokenOut: WBTC,
+    slippage: 100, // 1%
 };
 
 const swapQuote = await getQuote(chainId, protocol, logicId, logicParams);
@@ -148,6 +149,7 @@ const swapLogic = {
         amount: inputAmount
     },
     tokenOut: tokenOut,
+    slippage: 100, // 1%
 }
 
 // uniswap-v3: swap-token (exact out)
@@ -157,6 +159,7 @@ const swapLogic = {
         token: inputToken,
         amount: inputAmount
     },
+    slippage: 100, // 1%
 }
 ```
 
@@ -185,7 +188,8 @@ The result contains a list of chains that looks the following:
         },
         "amount": "1000"
     },
-    "path": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480001f46b175474e89094c44da98b954eedeac495271d0f000bb82260fac5e5542a773aa44fbcfedf7c193bc2c599"
+    "path": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb480001f46b175474e89094c44da98b954eedeac495271d0f000bb82260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "slippage": 100
 }
 ```
 
