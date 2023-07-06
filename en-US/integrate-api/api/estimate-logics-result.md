@@ -233,5 +233,5 @@ After the current estimation, there are transactions that necessitate user autho
 
 ### PermitData
 
-The first time the permit2 token is used for Composable Router, the user's signature is required. The default validity period of the signature is `30 minutes`, and the expiration time of the Token permit is `30 days`.
+The first time the permit2 token is used for Protocolink, the user's signature is required. The default validity period of the signature is `30 minutes`, and the expiration time of the Token permit is `30 days`.
 

@@ -11,7 +11,7 @@ Typically, the user needs to perform two actions:&#x20;
 1. Exchange **1000 USDC** to **WBTC** by **Uniswap V3**&#x20;
 2. Supply **WBTC** to get **aWBTC** by **Aave V3**
 
-Each of the actions mentioned above represents a **`Logic`** in the Composable Router.&#x20;
+Each of the actions mentioned above represents a **`Logic`** in Protocolink.&#x20;
 
 Let's start building these logics. Here you can find [**example code**](https://github.com/dinngo/composable-router-api-sdk/blob/master/examples/uniswap-v3-swap-and-aave-v3-supply.ts)**.**
 
@@ -25,8 +25,8 @@ The user can swap 1000 USDC for WBTC using the SwapTokenLogic of Uniswap V3.
 Below is the code snippet:
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as common from '@furucombo/composable-router-common';
+import * as api from '@protocolink/api';
+import * as common from '@protocolink/api';
 
 const chainId = common.ChainId.mainnet;
 
@@ -62,7 +62,7 @@ Then you can take the output of the previous `swapQuotation` and use it as an in
 2. Use `api.protocols.aavev3.newSupplyLogic` to build the supply Logic data.
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const supplyQuotation = await api.protocols.aavev3.getSupplyQuotation(chainId, {
   input: swapQuotation.output,

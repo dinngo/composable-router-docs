@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏡 Getting Started](README.md)
-* [🌟 Why Composable Router?](why-composable-router.md)
+* [🌟 Why Protocolink?](why-protocolink.md)
 * [💡 Use Cases](use-cases/README.md)
   * [Flash Loans](use-cases/flash-loans.md)
   * [Permit2 Amplifier](use-cases/permit2-amplifier.md)
@@ -64,6 +64,3 @@
 
 * [Twitter](https://twitter.com/furucombo)
 * [Discord](https://discord.gg/JuamDaq)
-* [Blog](https://medium.com/@furucombo)
-* [Youtube](https://www.youtube.com/channel/UCa1kGD4lvTSrmfKbDjQNOxQ)
-* [Telegram](https://t.me/furucombo)

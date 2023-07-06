@@ -6,7 +6,7 @@ Easily access the DEX liquidity pool, whether it's for depositing a single token
 
 ## Position Management
 
-Use Composable Router to help users manage assets in lending protocols such as:
+Use Protocolink to help users manage assets in lending protocols such as:
 
 * Collateral swap
 * Debt Swap

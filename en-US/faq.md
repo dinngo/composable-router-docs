@@ -1,14 +1,14 @@
 # ❓ FAQ
 
-### 1. Is  the Composable Router open source?
+### 1. Is Protocolink open source?
 
 We have open-sourced all our contracts and SDKs, except for the API. This enables developers to save time on research and focus on building products for users by either building upon the SDKs or accessing the API.
 
 ### 2. How do we decide which protocol to implement?
 
-The Composable Router has the ability to interact with any contract. Our **API/SDK** provides developers with the ability to develop applications more quickly for certain protocol logic. If you do not have a desired protocol logic to use, you can [submit pull requests (PRs)](https://github.com/dinngo/composable-router-logics) for integration. We will implement them based on **security**, **requirements**, and **cost**.
+Protocolink has the ability to interact with any contract. Our **API/SDK** provides developers with the ability to develop applications more quickly for certain protocol logic. If you do not have a desired protocol logic to use, you can [submit pull requests (PRs)](https://github.com/dinngo/composable-router-logics) for integration. We will implement them based on **security**, **requirements**, and **cost**.
 
-### **3. What problems does the** Composable Router solve**?**
+### **3. What problems does** Protocolink solve**?**
 
 1. The popularity of Web3 has led to an explosion in the number of protocols, and users have more demands on the **user experience**.
 2. Existing features require users to leave your product to perform certain actions.
@@ -18,7 +18,7 @@ The Composable Router has the ability to interact with any contract. Our **API/S
    1. There are several factors to consider, such as how much approval amount to add to the logic.
    2. Different chains and protocols have different interfaces, each of which takes time to learn.
    3. Changes to the application contract are expensive to redeploy or maintain every time.
-4. Composable Router can **aggregate** multiple protocols to make them more accessible to users. We have focused on the "**composable**" feature of blockchain for several years to **reduce development costs** and provide a **better user experience**.
+4. Protocolink can **aggregate** multiple protocols to make them more accessible to users. We have focused on the "**composable**" feature of blockchain for several years to **reduce development costs** and provide a **better user experience**.
 
 ### 4. Why is composability important?
 

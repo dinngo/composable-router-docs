@@ -59,7 +59,7 @@ type SwapTokenParams =
 * **SwapTokenFields**: A type that represents the fields required for the Uniswap V3 swap token logic.
 
 ```typescript
-import * as core from '@furucombo/composable-router-core';
+import * as core from '@protocolink/core';
 
 interface SwapTokenFields {
   tradeType: core.TradeType;
@@ -107,7 +107,7 @@ interface SwapTokenLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 

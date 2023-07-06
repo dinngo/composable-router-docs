@@ -6,11 +6,11 @@ description: >-
 
 # Agent
 
-In the Composable Router, each user has their own dedicated `Agent` to execute transactions. This design significantly reduces the risk of being attacked, as the corresponding user can only use each `Agent`. When a user conducts a transaction with the `Router` contract for the first time, the system checks whether the corresponding `Agent` exists. If not, a new `Agent` is automatically created during the user's first transaction, eliminating the need for the user to initiate an additional transaction to set up the `Agent`.
+In Protocolink, each user has their own dedicated `Agent` to execute transactions. This design significantly reduces the risk of being attacked, as the corresponding user can only use each `Agent`. When a user conducts a transaction with the `Router` contract for the first time, the system checks whether the corresponding `Agent` exists. If not, a new `Agent` is automatically created during the user's first transaction, eliminating the need for the user to initiate an additional transaction to set up the `Agent`.
 
-Even though each user has their own dedicated Agent contract in the Composable Router system, they still need to interact with the system through the Router contract. The Router serves as the only entry point for users to execute transactions and interact with the Composable Router system.
+Even though each user has their own dedicated Agent contract in Protocolink, they still need to interact with the system through the Router contract. The Router serves as the only entry point for users to execute transactions and interact with Protocolink.
 
-In some cases, it may be necessary to grant the `Agent` certain permissions before executing a transaction through the `Router`, such as: transferring tokens using the Uniswap Permit2 or borrowing tokens from AAVE through the Composable Router.
+In some cases, it may be necessary to grant the `Agent` certain permissions before executing a transaction through the `Router`, such as: transferring tokens using the Uniswap Permit2 or borrowing tokens from AAVE through Protocolink.
 
 #### Calculate Agent Address
 

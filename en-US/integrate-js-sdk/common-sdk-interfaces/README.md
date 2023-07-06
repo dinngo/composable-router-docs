@@ -11,16 +11,16 @@ This section provides a comprehensive overview of the standard interfaces and ut
 
 ### Installing the package
 
-To install the `@furucombo/composable-router-common` package, run the following command:
+To install the `@protocolink/common` package, run the following command:
 
 ```sh
-npm install @furucombo/composable-router-common
+npm install @protocolink/common
 ```
 
 or
 
 ```bash
-yarn add @furucombo/composable-router-common
+yarn add @protocolink/common
 ```
 
 This will add the package to your project and save it to your `package.json` file.
@@ -30,7 +30,7 @@ This will add the package to your project and save it to your `package.json` fil
 To use the SDK in your project, import it as follows:
 
 ```typescript
-import * as common from '@furucombo/composable-router-common';
+import * as common from '@protocolink/common';
 ```
 
 That's it! You can now start using the SDK in your project.

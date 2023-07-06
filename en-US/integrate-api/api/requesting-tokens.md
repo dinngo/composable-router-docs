@@ -48,7 +48,7 @@ Example: swap-token, supply
 This endpoint provides a list of tokens supported by Logic, depending on the chain and protocol.
 
 ```javascript
-const client = axios.create({ baseURL: 'https://ethtaipei-router-api.furucombo.app' });
+const client = axios.create({ baseURL: 'https://api.protocolink.com' });
 const getTokens = async (chainId, protocol, logicId) => {
     const result = await client.get(`/v1/protocols/${chainId}/${protocol}/${logicId}/tokens`);
     return result.data;

@@ -79,7 +79,7 @@ interface SupplyLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 
@@ -173,7 +173,7 @@ interface WithdrawLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 
@@ -201,7 +201,7 @@ The following code defines interfaces and functions related to the Aave V3 borro
 * **BorrowFields**: A type that represents the fields required for the Aave V3 borrow logic.
 
 ```typescript
-import * as logics from '@furucombo/composable-router-logics';
+import * as logics from '@protocolink/logics';
 
 interface BorrowFields {
   interestRateMode: logics.aavev3.InterestRateMode;
@@ -235,8 +235,8 @@ interface BorrowLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 
@@ -261,7 +261,7 @@ The following code defines interfaces and functions related to the Aave V3 repay
 * **RepayParams**: A type that represents the input parameters for the Aave V3 repay logic
 
 ```typescript
-import * as logics from '@furucombo/composable-router-logics';
+import * as logics from '@protocolink/logics';
 
 interface RepayParams {
   tokenIn: {
@@ -279,7 +279,7 @@ interface RepayParams {
 * **RepayFields**: A type that represents the fields required for the Aave V3 repay logic.
 
 ```typescript
-import * as logics from '@furucombo/composable-router-logics';
+import * as logics from '@protocolink/logics';
 
 interface RepayFields {
   input: {
@@ -315,8 +315,8 @@ interface RepayLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const account = '0xaAaAaAaaAaAaAaaAaAAAAAAAAaaaAaAaAaaAaaAa';
@@ -350,7 +350,7 @@ Please refer to the [FlashLoan Logic](flashloan-logic.md) section for more infor
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 

@@ -92,8 +92,8 @@ interface SupplyBaseLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -155,8 +155,8 @@ interface SupplyCollateralLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -250,8 +250,8 @@ interface WithdrawBaseLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -313,8 +313,8 @@ interface WithdrawCollateralLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -372,8 +372,8 @@ interface BorrowLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -449,8 +449,8 @@ interface RepayLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;
@@ -520,8 +520,8 @@ interface ClaimLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as logics from '@furucombo/composable-router-logics';
+import * as api from '@protocolink/api';
+import * as logics from '@protocolink/logics';
 
 const chainId = 1;
 const marketId = logics.compoundv3.MarketId.USDC;

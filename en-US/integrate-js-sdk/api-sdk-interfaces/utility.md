@@ -79,7 +79,7 @@ interface WrappedNativeTokenLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 
@@ -155,7 +155,7 @@ interface SendTokenLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 
@@ -212,7 +212,7 @@ interface MultiSendLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 
@@ -292,8 +292,8 @@ interface CustomDataLogic {
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
-import * as common from '@furucombo/composable-router-common';
+import * as api from '@protocolink/api';
+import * as common from '@protocolink/common';
 import axios from 'axios';
 
 const chainId = 1;

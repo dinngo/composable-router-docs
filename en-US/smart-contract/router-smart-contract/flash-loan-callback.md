@@ -6,7 +6,7 @@ description: >-
 
 # Flash Loan Callback
 
-During FlashLoan operations, a callback contract must be provided for the FlashLoan service to call upon, which facilitates the completion of fund management and repayment. In the Composable Router, we have designed state-less, one-time callback contracts specifically for these purposes. if you intend to use a callback contract, you must specify it in the `callback` field of the [`IParam.Logic`](router.md#iparam.logic) struct in advance.
+During FlashLoan operations, a callback contract must be provided for the FlashLoan service to call upon, which facilitates the completion of fund management and repayment. In Protocolink, we have designed state-less, one-time callback contracts specifically for these purposes. if you intend to use a callback contract, you must specify it in the `callback` field of the [`IParam.Logic`](router.md#iparam.logic) struct in advance.
 
 Currently, we support the following:
 

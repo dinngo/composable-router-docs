@@ -12,5 +12,5 @@ The user only needs to authorize the transaction once to permit2 contract. Then,
 
 ### Router + Permit2 ✨
 
-By combining Composable Router with permit2 it will greatly improve the user experience and safety. This is achieved through only requiring one signature (also time-limited), and directly using the token to any contract. In addition, the Router does not retain user assets, further enhancing the experience of using the wallet.
+By combining Protocolink with permit2 it will greatly improve the user experience and safety. This is achieved through only requiring one signature (also time-limited), and directly using the token to any contract. In addition, the Router does not retain user assets, further enhancing the experience of using the wallet.
 

@@ -1,17 +1,17 @@
 ---
 description: >-
-  The Composable Router is a versatile integration solution that empowers
-  developers to seamlessly incorporate new protocols into their applications
-  without the need to learn smart contracts.
+  Protocolink is a versatile integration solution that empowers developers to
+  seamlessly incorporate new protocols into their applications without the need
+  to learn smart contracts.
 ---
 
 # 🏡 Getting Started
 
 ## Architecture Diagram
 
-The Composable Router SDK/API allows developers to quickly build applications and enhance the user experience.
+Protocolink SDK/API allows developers to quickly build applications and enhance the user experience.
 
-<figure><img src=".gitbook/assets/Composable Router Architecture Diagram (1).png" alt=""><figcaption><p><strong>Logic:</strong> The action to a contract, such as approval, swap, adding liquidity, repayment, flash-loan, and so on</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Gitbook Architecture Diagram.png" alt=""><figcaption><p><strong>Logic:</strong> the above illustrates the actions performed during execution, such as approval, swap, supply, borrow, flash loans, and so on.</p></figcaption></figure>
 
 ## TypeScript SDK (Recommended)
 

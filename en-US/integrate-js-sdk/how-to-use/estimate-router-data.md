@@ -7,7 +7,7 @@ To properly estimate the logics of the router results, closely follow the steps 
 First, you need to prepare the Router Data, which will include the `chainId`, `account`, and `logics` data.
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const routerData: api.RouterData = {
   chainId,
@@ -21,7 +21,7 @@ const routerData: api.RouterData = {
 Next, use `api.estimateRouterData` to estimate how much funds will be spent (funds) and how many balances will be obtained (balances) from this transaction. It will also identify any approvals that the user needs to execute (approvals) before the transaction and whether there is any permit2 data that the user needs to sign before proceeding (permitData).
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const estimateResult = await api.estimateRouterData(routerData);
 ```
@@ -74,7 +74,7 @@ for (const approval of estimateResult.approvals) {
 
 ### Step 4: PermitData (optional)
 
-For this transaction, the user needs to sign to permit Composable Router contract to spend his USDC fist. If using `ethers` package, you can refer to the following code snippet to help the user sign the \`permitData\`:
+For this transaction, the user needs to sign to permit Protocolink contract to spend his USDC fist. If using `ethers` package, you can refer to the following code snippet to help the user sign the \`permitData\`:
 
 ```typescript
 const signer = provider.getSigner(account);

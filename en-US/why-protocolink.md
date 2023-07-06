@@ -5,7 +5,7 @@ description: >-
   widely used ERC-721 and ERC-1155 protocols
 ---
 
-# 🌟 Why Composable Router?
+# 🌟 Why Protocolink?
 
 ## **User Problems**
 
@@ -20,7 +20,7 @@ description: >-
 
 ## Solution&#x20;
 
-Develop a [**flexible composable router contract**](broken-reference) that can bundle various logics in **one transaction**, and provide a [**API**](broken-reference) and [**SDK**](broken-reference) for developers to easily integrate their own application requirements.&#x20;
+[**Protocolink**](broken-reference) can bundle various logics in **one transaction**, and provide a [**API**](broken-reference) and [**SDK**](broken-reference) for developers to easily integrate their own application requirements.&#x20;
 
 This empowers developers to create products with greater possibilities, while reducing maintenance time and costs, as well as the learning curve.&#x20;
 
@@ -36,7 +36,7 @@ Additionally, it enables users to seamlessly enjoy advanced experiences with the
 
 ### Build on DeFi/NFT projects without needing to learn smart contracts
 
-* Developers can leverage the Composable Router to build diverse products or bots without the need to develop smart contracts. This empowers developers to prioritize user experience or algorithm design.
+* Developers can leverage Protocolink to build diverse products or bots without the need to develop smart contracts. This empowers developers to prioritize user experience or algorithm design.
 * Developers can combine different DeFi and NFT projects to create novel use cases, leveraging the full composability of blockchain technology.
 
 ### Improve the user experience of token approval
@@ -49,5 +49,5 @@ Additionally, it enables users to seamlessly enjoy advanced experiences with the
 
 ### Support ERC-721 and ERC-1155 protocols
 
-* Both the DeFi and NFT markets widely adopt these standards to build their products. Composable Router can continuously integrate these protocols, enhancing their usability.
+* Both the DeFi and NFT markets widely adopt these standards to build their products. Protocolink can continuously integrate these protocols, enhancing their usability.
 

@@ -21,7 +21,7 @@ Please refer to the [FlashLoan Logic](flashloan-logic.md) section for more infor
 ### Example Code
 
 ```typescript
-import * as api from '@furucombo/composable-router-api';
+import * as api from '@protocolink/api';
 
 const chainId = 1;
 

@@ -1,8 +1,8 @@
 ---
 description: >-
-  The Composable Router allows for liberation from a single protocol. As
-  additional protocols and applications emerge, the potential and convenience of
-  the router increase significantly.
+  Protocolink allows for liberation from a single protocol. As additional
+  protocols and applications emerge, the potential and convenience of the router
+  increase significantly.
 ---
 
 # 💡 Use Cases
