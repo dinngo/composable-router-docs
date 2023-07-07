@@ -26,13 +26,23 @@ Example: swap-token, supply
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="input" required="true" type="Object" %}
-The token address with amount
-
-
+The token with amount
 
 {
 
-&#x20;   "token": string,
+&#x20;   "token": {
+
+&#x20;       "chainId": number,
+
+&#x20;       "address": string,
+
+&#x20;       "decimals": number,
+
+&#x20;       "symbol": string,
+
+&#x20;       "name": string
+
+&#x20;   },
 
 &#x20;   "amount": string
 
@@ -40,7 +50,20 @@ The token address with amount
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="tokenOut" required="true" type="String" %}
-The output token address
+The output token address\
+{
+
+&#x20;   "chainId": number,
+
+&#x20;   "address": string,
+
+&#x20;   "decimals": number,
+
+&#x20;   "symbol": string,
+
+&#x20;   "name": string
+
+}
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

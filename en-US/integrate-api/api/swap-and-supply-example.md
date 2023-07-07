@@ -135,7 +135,7 @@ const transactionRequest = await getEstimateResult(chainId, account, logics);
 
 ### Step 5: Sending the Transaction
 
-The  Router transaction is what needs needs to be sent next. If you are using the `ethers` package, you can refer to the code example provided below to send the transaction:
+The transaction to Router is what needs needs to be sent next. If you are using the `ethers` package, you can refer to the code example provided below to send the transaction:
 
 ```javascript
 const signer = provider.getSigner(account);

@@ -13,7 +13,7 @@ The **Router** provides users with a single entry point for conducting transacti
 function execute(
     IParam.Logic[] calldata logics,
     address[] calldata tokensReturn,
-    uint256 referral
+    uint256 referralCode
 ) external payable {}
 ```
 {% endcode %}
@@ -24,7 +24,7 @@ The `execute()` function serves as the core interface for users to execute trans
 
 * **`IParam.Logic[] logics`**: The `logics` parameter provided by the user should be an array of type `IParam.Logic` containing all the logic operations to be executed (such as transaction-related information like `to` and `data`). Detailed explanations regarding `IParam.Logic` will be provided in subsequent sections.
 * **`address[] tokensReturn`**: Users must provide an array of type `address` as the `tokensReturn` parameter to indicate all the tokens expected to be returned to the user's account.
-* **`uint256 referral`**: Currently, this parameter has no actual function and is only reserved. Users can pass in **`0`** directly.
+* **`uint256 referralCode`**: Currently, this parameter has no actual function and is only reserved. Users can pass in **`0`** directly.
 
 At the same time, users can also transfer ether to the Router through the `msg.value` parameter to complete the corresponding operations.
 
@@ -43,7 +43,7 @@ struct Logic {
 
 struct Input {
     address token;
-    uint256 amountBps;
+    uint256 balanceBps;
     uint256 amountOrOffset;
 }
 
@@ -67,7 +67,7 @@ enum WrapMode {
 #### Input Data Structure:
 
 * **`address token`**: The address of the input token.
-* **`uint256 amountBps`**: `7_000` represents 70% of the token balance as the replacement amount. If you want to skip the bps calculation, fill `type(uint256).max`, and the **`amountOrOffset`** will be used as the amount directly.
+* **`uint256 balanceBps`**: `7_000` represents 70% of the token balance as the replacement amount. If you want to skip the bps calculation, fill `type(uint256).max`, and the **`amountOrOffset`** will be used as the amount directly.
 *   **`uint256 amountOrOffset`**: If `amountBps` is omitted, the `amountOrOffset` field represents the actual amount of the trade. However, if `amountBps` is specified, the `amountOrOffset` field represents the byte offset of the amount value in `Logic.data` for replacement. If replacement of the amount value is not required, set `amountOrOffset` to `type(uint256).max` to skip it.
 
     \

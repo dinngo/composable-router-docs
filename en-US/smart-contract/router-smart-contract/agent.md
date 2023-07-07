@@ -25,5 +25,3 @@ function calcAgent(address owner_) external view returns (address) {}
 This function has the following parameter:
 
 * **`owner_`**: an `address` type, used to query the Agent address associated with the `owner_`.
-
-For detailed sample code, please refer to [this link](https://github.com/dinngo/composable-router-contract/blob/release/v0.1.0-ethtaipei/test/utils/SpenderPermitUtils.sol#L48).
