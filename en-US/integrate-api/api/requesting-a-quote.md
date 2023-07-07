@@ -26,49 +26,21 @@ Example: swap-token, supply
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="input" required="true" type="Object" %}
-The token with amount
+The token address with amount
 
 
 
 {
 
-&#x20;   "token": {
-
-&#x20;       "chainId": number,
-
-&#x20;       "address": string,
-
-&#x20;       "decimals": number,
-
-&#x20;       "symbol": string,
-
-&#x20;       "name": string,
-
-&#x20;   },
+&#x20;   "token": string,
 
 &#x20;   "amount": string
 
 }
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="tokenOut" required="true" type="Object" %}
-The output token of logic
-
-
-
-{
-
-&#x20;   "chainId": number,
-
-&#x20;   "address": string,
-
-&#x20;   "decimals": number,
-
-&#x20;   "symbol": string,
-
-&#x20;   "name": string,
-
-}
+{% swagger-parameter in="body" name="tokenOut" required="true" type="String" %}
+The output token address
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

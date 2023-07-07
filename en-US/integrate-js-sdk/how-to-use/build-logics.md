@@ -13,7 +13,7 @@ Typically, the user needs to perform two actions:&#x20;
 
 Each of the actions mentioned above represents a **`Logic`** in Protocolink.&#x20;
 
-Let's start building these logics. Here you can find [**example code**](https://github.com/dinngo/composable-router-api-sdk/blob/master/examples/uniswap-v3-swap-and-aave-v3-supply.ts)**.**
+Let's start building these logics. Here you can find [**example code**](https://github.com/dinngo/protocolink-js-sdk/blob/master/packages/api/examples/uniswap-v3-swap-and-aave-v3-supply.ts)**.**
 
 ## Logic 1: Swap
 
