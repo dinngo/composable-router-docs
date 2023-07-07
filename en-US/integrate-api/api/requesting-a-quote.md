@@ -32,7 +32,7 @@ The token with amount
 
 {
 
-&#x20;   token: {
+&#x20;   "token": {
 
 &#x20;       "chainId": number,
 
