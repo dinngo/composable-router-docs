@@ -57,8 +57,15 @@
 
 ## Resources
 
-* [Deployed Addresses](resources/deployed-addresses.md)
-* [GitHub](resources/github.md)
+* [📘 Deployed Addresses](resources/deployed-addresses.md)
+* [📔 GitHub](resources/github.md)
+
+## COMPOUND KIT
+
+* [❇ What is Compound Kit](compound-kit/what-is-compound-kit.md)
+* [🍀 Compound Kit Architecture](compound-kit/compound-kit-architecture.md)
+* [🔋 SDK](compound-kit/sdk/README.md)
+  * [Leverage](compound-kit/sdk/leverage.md)
 
 ## Social medias
 
